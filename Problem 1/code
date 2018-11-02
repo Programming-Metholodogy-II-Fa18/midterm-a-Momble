@@ -1,0 +1,48 @@
+package miderm;
+
+public class problem1 {
+	
+	public problem1(){
+	}
+	public static void mergesort(int[] a, int size){
+		for(int i = 0; i < (size); i ++)
+		{
+			for(int j = i+1; j < (size); j++)
+			{
+				int num = i;
+				if(less(a[num], a[j]))
+				{
+					num = j ;
+				}
+				swap(a, j, num);
+			}
+		}
+	}
+	public static void swap(int[] a, int b, int c){
+		int temp = a[b];
+		a[b] = a[c];
+		a[c] = temp;
+	}
+	public static boolean less(Comparable v, Comparable w)
+	{
+		return v.compareTo(w) < 0;
+	}
+	public static void merge(int[] a, int[]b)
+	{
+		int[] q= {};
+		for(int i = 0; i< a.length; i ++)
+		{
+			
+		}
+	}
+	public static void main(String[] args)
+	{
+		int[] array = {15,9,60,44,12,1,4};
+		mergesort(array, array.length);
+		for(int i = 0; i < array.length; i++)
+		{
+			System.out.print(array[i] + " ");
+		}
+	}
+
+}
