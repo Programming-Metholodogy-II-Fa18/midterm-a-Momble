@@ -1,0 +1,51 @@
+package miderm;
+
+public class problem2 {
+	Node head;
+	Node tail;
+	public class Node
+	{
+		Node next;
+		int data;
+		public Node(int n)
+		{
+			this.next = tail;
+			data = n;
+		}
+	}
+	private int size;
+	public problem2(){
+		size = -1;
+	}
+	public void add(int a){
+		Node temp = new Node(a);
+		while(head != null){
+			head.data = 
+			temp.data = head.data;
+		}
+		size++;
+	}
+	public int remove()
+	{
+		int tempo = tail.data;
+		tail = null;
+		--size;
+		System.out.print(tempo);
+		return tempo;
+	}
+	public void getValue(index i)
+	{
+		
+	}
+	public static void main(String[] args)
+	{
+		problem2 queue = new problem2();
+		queue.add(1);
+		queue.add(9);
+		queue.add(4);
+		queue.add(5);
+		queue.add(10);
+		queue.add(0);
+	}
+
+}
